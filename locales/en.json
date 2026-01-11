@@ -1,0 +1,92 @@
+
+{
+  "app": { "title": "Knight's Tour Challenge" },
+  "settings": {
+    "howToPlay": "How to Play",
+    "howToPlayDescription": "The goal is to visit every square on the board exactly once, moving like a knight in chess. A knight moves in an 'L' shape: two squares in one direction (horizontally or vertically) and then one square perpendicularly.",
+    "boardSize": "Board Size",
+    "showHints": "Show Hints",
+    "showNumbers": "Show Numbers",
+    "theme": "Theme",
+    "startGame": "Start Game",
+    "returnToGame": "Return to Game",
+    "newGame": "New Game",
+    "loadPhoto": "Play on Photo",
+    "shareGame": "Share Game",
+    "diceWar": "Dice War Game",
+    "imagePdfTools": "Image & PDF Tools",
+    "loadingArt": "Loading...",
+    "artError": "Could not load the selected artwork. Please check your connection and try another one.",
+    "totalScore": "Total Score"
+  },
+  "themes": {
+    "classic": "Classic",
+    "savePlanet": "Save Planet",
+    "pollutePlanet": "Pollute Planet",
+    "randomArt": "Random Art"
+  },
+  "game": {
+    "score": "Score",
+    "undo": "Undo",
+    "restart": "Restart",
+    "settings": "Settings",
+    "guessTheArtwork": "Guess the Artwork:",
+    "correctGuess": "Correct! Future moves earn bonus points!",
+    "incorrectGuess": "Incorrect! -100 points."
+  },
+  "gameOver": {
+    "winTitle": "Tour Complete!",
+    "loseTitle": "Game Over",
+    "winMessage": "Congratulations, you've mastered the Knight's Tour!",
+    "loseMessage": "A valiant effort, but the knight is trapped.",
+    "yourScore": "Your Score",
+    "playAgain": "Play Again",
+    "changeSettings": "Change Settings",
+    "shareResult": "Share Result",
+    "shareText": "I scored {score}/{total} in the Knight's Tour Challenge! Check out my result:",
+    "baseScore": "Base Score",
+    "bonusPoints": "Bonus Points",
+    "penalty": "Penalty",
+    "totalScore": "Total Score",
+    "artworkTitle": "Artwork"
+  },
+  "artworks": {
+    "monaLisa": { "title": "Mona Lisa", "options": ["Mona Lisa", "Lady with an Ermine", "La Belle Ferronnière", "The Virgin of the Rocks"] },
+    "starryNight": { "title": "The Starry Night", "options": ["The Starry Night", "Café Terrace at Night", "The Potato Eaters", "Sunflowers"] },
+    "pearlEarring": { "title": "Girl with a Pearl Earring", "options": ["Girl with a Pearl Earring", "The Milkmaid", "The Art of Painting", "View of Delft"] },
+    "birthOfVenus": { "title": "The Birth of Venus", "options": ["The Birth of Venus", "Primavera", "Pallas and the Centaur", "Venus and Mars"] },
+    "nightWatch": { "title": "The Night Watch", "options": ["The Night Watch", "The Syndics of the Drapers' Guild", "The Jewish Bride", "The Anatomy Lesson"] },
+    "theKiss": { "title": "The Kiss", "options": ["The Kiss", "The Three Ages of Woman", "Portrait of Adele Bloch-Bauer I", "Judith and the Head of Holofernes"] },
+    "wanderer": { "title": "Wanderer above the Sea of Fog", "options": ["Wanderer above the Sea of Fog", "The Abbey in the Oakwood", "The Sea of Ice", "Chalk Cliffs on Rügen"] },
+    "greatWave": { "title": "The Great Wave off Kanagawa", "options": ["The Great Wave off Kanagawa", "Fine Wind, Clear Morning", "A Mild Breeze on a Fine Day", "The Dream of the Fisherman's Wife"] },
+    "liberty": { "title": "Liberty Leading the People", "options": ["Liberty Leading the People", "The Raft of the Medusa", "The Death of Sardanapalus", "The Women of Algiers"] },
+    "arnolfini": { "title": "The Arnolfini Portrait", "options": ["The Arnolfini Portrait", "The Ghent Altarpiece", "Portrait of a Man in a Turban", "The Madonna of Chancellor Rolin"] },
+    "americanGothic": { "title": "American Gothic", "options": ["American Gothic", "Nighthawks", "Christina's World", "Early Sunday Morning"] },
+    "theScream": { "title": "The Scream", "options": ["The Scream", "Madonna", "The Dance of Life", "Anxiety"] },
+    "laGrandeJatte": { "title": "A Sunday on La Grande Jatte", "options": ["A Sunday on La Grande Jatte", "Bathers at Asnières", "The Circus", "The Models"] },
+    "persistenceOfMemory": { "title": "The Persistence of Memory", "options": ["The Persistence of Memory", "The Elephants", "Swans Reflecting Elephants", "Metamorphosis of Narcissus"] },
+    "lasMeninas": { "title": "Las Meninas", "options": ["Las Meninas", "The Surrender of Breda", "The Rokeby Venus", "The Triumph of Bacchus"] }
+  },
+  "footer": {
+    "developer": "Developer",
+    "feedback": "Found a bug or have a suggestion? Email us:",
+    "website": "apsardze24.lv",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "legal": {
+    "backButton": "Back to Game",
+    "privacyTitle": "Privacy Policy",
+    "privacyContent": "Our application respects your privacy. We only store your game settings (like board size and theme) in your browser's local storage. This data is stored on your device and is not sent to our servers. In the future, we may use Google Analytics to collect anonymous usage data to help us improve the game. This data will be aggregated and will not contain any personally identifiable information.",
+    "termsTitle": "Terms of Service",
+    "termsContent": "By using this game, you agree to these terms. This game is provided for free, for personal, non-commercial use. You agree not to use automated scripts to play the game or to disrupt the service. We reserve the right to modify these terms at any time.",
+    "cookiesTitle": "Cookie Policy",
+    "cookiesContent": "This site uses cookies and similar technologies. A 'cookie' is a small piece of data stored on your device. We use browser's `localStorage` to save your game configuration. This is essential for the game to remember your preferences between sessions. We may also use cookies for analytics purposes (e.g., Google Analytics) to understand how players interact with the game, which helps us to improve it. By using our site, you consent to this."
+  },
+  "cookieConsent": {
+    "message": "We use cookies to enhance your experience and for analytics. By continuing to use this site, you consent to our use of cookies.",
+    "accept": "Accept",
+    "decline": "Decline"
+  }
+}

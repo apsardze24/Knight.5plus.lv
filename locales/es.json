@@ -1,0 +1,92 @@
+
+{
+  "app": { "title": "Desafío del Tour del Caballo" },
+  "settings": {
+    "howToPlay": "Cómo Jugar",
+    "howToPlayDescription": "El objetivo es visitar cada casilla del tablero exactamente una vez, moviéndose como un caballo en ajedrez. Un caballo se mueve en forma de 'L': dos casillas en una dirección (horizontal o vertical) y luego una casilla perpendicularmente.",
+    "boardSize": "Tamaño del Tablero",
+    "showHints": "Mostrar Pistas",
+    "showNumbers": "Mostrar Números",
+    "theme": "Tema",
+    "startGame": "Empezar Juego",
+    "returnToGame": "Volver al Juego",
+    "newGame": "Nuevo Juego",
+    "loadPhoto": "Jugar sobre Foto",
+    "shareGame": "Compartir Juego",
+    "diceWar": "Guerra de Dados",
+    "imagePdfTools": "Herramientas de Imagen y PDF",
+    "loadingArt": "Cargando...",
+    "artError": "No se pudo cargar la obra de arte. Por favor, compruebe su conexión e intente con otra.",
+    "totalScore": "Puntuación Total"
+  },
+  "themes": {
+    "classic": "Clásico",
+    "savePlanet": "Salvar el Planeta",
+    "pollutePlanet": "Contaminar el Planeta",
+    "randomArt": "Puzle de Arte"
+  },
+  "game": {
+    "score": "Puntuación",
+    "undo": "Deshacer",
+    "restart": "Reiniciar",
+    "settings": "Ajustes",
+    "guessTheArtwork": "Adivina la obra de arte:",
+    "correctGuess": "¡Correcto! ¡Los futuros movimientos ganan puntos de bonificación!",
+    "incorrectGuess": "¡Incorrecto! -100 puntos."
+  },
+  "gameOver": {
+    "winTitle": "¡Tour Completado!",
+    "loseTitle": "Juego Terminado",
+    "winMessage": "¡Felicidades, has dominado el Tour del Caballo!",
+    "loseMessage": "Un esfuerzo valiente, pero el caballo está atrapado.",
+    "yourScore": "Tu Puntuación",
+    "playAgain": "Jugar de Nuevo",
+    "changeSettings": "Cambiar Ajustes",
+    "shareResult": "Compartir Resultado",
+    "shareText": "¡He conseguido {score}/{total} en el Desafío del Tour del Caballo! Mira mi resultado:",
+    "baseScore": "Puntuación Base",
+    "bonusPoints": "Puntos Extra",
+    "penalty": "Penalización",
+    "totalScore": "Puntuación Total",
+    "artworkTitle": "Obra de Arte"
+  },
+  "artworks": {
+    "monaLisa": { "title": "Mona Lisa", "options": ["Mona Lisa", "La dama del armiño", "La Belle Ferronnière", "La Virgen de las Rocas"] },
+    "starryNight": { "title": "La noche estrellada", "options": ["La noche estrellada", "Terraza de café por la noche", "Los comedores de patatas", "Los girasoles"] },
+    "pearlEarring": { "title": "La joven de la perla", "options": ["La joven de la perla", "La lechera", "El arte de la pintura", "Vista de Delft"] },
+    "birthOfVenus": { "title": "El nacimiento de Venus", "options": ["El nacimiento de Venus", "Primavera", "Palas y el centauro", "Venus y Marte"] },
+    "nightWatch": { "title": "La ronda de noche", "options": ["La ronda de noche", "Los síndicos de los pañeros", "La novia judía", "La lección de anatomía"] },
+    "theKiss": { "title": "El beso", "options": ["El beso", "Las tres edades de la mujer", "Retrato de Adele Bloch-Bauer I", "Judit y la cabeza de Holofernes"] },
+    "wanderer": { "title": "Caminante sobre un mar de nubes", "options": ["Caminante sobre un mar de nubes", "La abadía en el robledal", "El mar de hielo", "Acantilados blancos en Rügen"] },
+    "greatWave": { "title": "La gran ola de Kanagawa", "options": ["La gran ola de Kanagawa", "Viento del sur, cielo claro", "Una suave brisa en un día despejado", "El sueño de la esposa del pescador"] },
+    "liberty": { "title": "La Libertad guiando al pueblo", "options": ["La Libertad guiando al pueblo", "La balsa de la Medusa", "La muerte de Sardanápalo", "Mujeres de Argel"] },
+    "arnolfini": { "title": "El retrato de Arnolfini", "options": ["El retrato de Arnolfini", "El políptico de Gante", "Retrato de un hombre con turbante", "La Virgen del canciller Rolin"] },
+    "americanGothic": { "title": "Gótico estadounidense", "options": ["Gótico estadounidense", "Nighthawks", "El mundo de Cristina", "Domingo por la mañana temprano"] },
+    "theScream": { "title": "El grito", "options": ["El grito", "Madonna", "La danza de la vida", "Ansiedad"] },
+    "laGrandeJatte": { "title": "Tarde de domingo en la isla de la Grande Jatte", "options": ["Tarde de domingo en la isla de la Grande Jatte", "Bañistas en Asnières", "El circo", "Las modelos"] },
+    "persistenceOfMemory": { "title": "La persistencia de la memoria", "options": ["La persistencia de la memoria", "Los elefantes", "Cisnes que se reflejan como elefantes", "La metamorfosis de Narciso"] },
+    "lasMeninas": { "title": "Las meninas", "options": ["Las meninas", "La rendición de Breda", "La Venus del espejo", "El triunfo de Baco"] }
+  },
+  "footer": {
+    "developer": "Desarrollador",
+    "feedback": "¿Encontraste un error o tienes una sugerencia? Envíanos un correo electrónico:",
+    "website": "apsardze24.lv",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "cookiePolicy": "Política de Cookies"
+  },
+  "legal": {
+    "backButton": "Volver al Juego",
+    "privacyTitle": "Política de Privacidad",
+    "privacyContent": "Nuestra aplicación respeta su privacidad. Solo almacenamos la configuración de su juego (como el tamaño del tablero y el tema) en el almacenamiento local de su navegador. Estos datos se guardan en su dispositivo y no se envían a nuestros servidores. En el futuro, podríamos usar Google Analytics para recopilar datos de uso anónimos para ayudarnos a mejorar el juego. Estos datos serán agregados y no contendrán ninguna información de identificación personal.",
+    "termsTitle": "Términos de Servicio",
+    "termsContent": "Al usar este juego, usted acepta estos términos. Este juego se proporciona de forma gratuita, para uso personal y no comercial. Usted acepta no usar scripts automatizados para jugar o para interrumpir el servicio. Nos reservamos el derecho de modificar estos términos en cualquier momento.",
+    "cookiesTitle": "Política de Cookies",
+    "cookiesContent": "Este sitio utiliza cookies y tecnologías similares. Una 'cookie' es un pequeño dato almacenado en su dispositivo. Usamos el `localStorage` del navegador para guardar la configuración de su juego. Esto es esencial para que el juego recuerde sus preferencias entre sesiones. También podemos usar cookies para fines analíticos (por ejemplo, Google Analytics) para entender cómo los jugadores interactúan con el juego, lo que nos ayuda a mejorarlo. Al usar nuestro sitio, usted da su consentimiento para esto."
+  },
+  "cookieConsent": {
+    "message": "Usamos cookies para mejorar su experiencia y para análisis. Al continuar usando este sitio, usted acepta nuestro uso de cookies.",
+    "accept": "Aceptar",
+    "decline": "Rechazar"
+  }
+}

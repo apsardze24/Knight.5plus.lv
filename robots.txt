@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://knight.5plus.lv/sitemap.xml

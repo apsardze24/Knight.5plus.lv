@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knight's Tour Challenge - A Classic Chess Puzzle Game</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#2d3748" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Play the Knight's Tour Challenge! A classic chess puzzle where the goal is to move a knight to every square on the board exactly once. Responsive, playable on mobile and desktop, with multiple themes." />
+    <meta name="keywords" content="knight's tour, chess puzzle, brain game, logic game, strategy game, online game, free game, knight puzzle, pwa game" />
+    <meta name="author" content="apsardze24.lv" />
+
+    <!-- Open Graph Meta Tags (for social sharing) -->
+    <meta property="og:title" content="Knight's Tour Challenge" />
+    <meta property="og:description" content="Can you solve the classic chess puzzle? Visit every square on the board exactly once. Test your skills now!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://knight.5plus.lv" />
+    <meta property="og:image" content="http://knight.5plus.lv/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Knight's Tour Challenge" />
+    <meta name="twitter:description" content="A classic chess puzzle where the goal is to move a knight to every square on the board exactly once." />
+    <meta name="twitter:image" content="http://knight.5plus.lv/og-image.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/"
+      }
+    }
+    </script>
+    <style>
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+    </style>
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Knight's Tour Challenge",
+      "url": "http://knight.5plus.lv",
+      "author": {
+        "@type": "Organization",
+        "name": "apsardze24.lv"
+      },
+      "description": "A classic chess puzzle where the goal is to move a knight to every square on the board exactly once. The game is responsive and can be played on both mobile and desktop devices.",
+      "genre": ["Puzzle", "Strategy"],
+      "playMode": "SinglePlayer",
+      "applicationCategory": "Game",
+      "operatingSystem": "Any"
+    }
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            })
+            .catch(error => {
+              console.log('ServiceWorker registration failed: ', error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
