@@ -1,3 +1,4 @@
+
 import React, { createContext, useState, useContext, useEffect, useCallback, PropsWithChildren } from 'react';
 
 export type Language = 'en' | 'es' | 'fr' | 'de' | 'ru';
@@ -18,11 +19,11 @@ export const LanguageProvider: React.FC<PropsWithChildren<{}>> = ({ children }) 
     const fetchTranslations = async () => {
       try {
         const responses = await Promise.all([
-          fetch('./locales/en.json'),
-          fetch('./locales/es.json'),
-          fetch('./locales/fr.json'),
-          fetch('./locales/de.json'),
-          fetch('./locales/ru.json'),
+          fetch('/locales/en.json'),
+          fetch('/locales/es.json'),
+          fetch('/locales/fr.json'),
+          fetch('/locales/de.json'),
+          fetch('/locales/ru.json'),
         ]);
 
         const data = await Promise.all(responses.map(res => res.json()));
@@ -44,7 +45,7 @@ export const LanguageProvider: React.FC<PropsWithChildren<{}>> = ({ children }) 
 
   const t = useCallback((key: string): any => {
     if (!translations) {
-      return key; // Return key if translations are not loaded yet
+      return key;
     }
     
     const keys = key.split('.');
@@ -57,7 +58,7 @@ export const LanguageProvider: React.FC<PropsWithChildren<{}>> = ({ children }) 
             if (current && typeof current === 'object' && k in current) {
                 current = current[k];
             } else {
-                return null; // Key path not found
+                return null;
             }
         }
         return current;
@@ -65,16 +66,13 @@ export const LanguageProvider: React.FC<PropsWithChildren<{}>> = ({ children }) 
 
     let translation = findTranslation(language);
     
-    // Fallback to English if not found and current language is not English
     if (translation === null && language !== 'en') {
         translation = findTranslation('en');
     }
 
-    // Return key if translation is still not found
     return translation ?? key;
   }, [language, translations]);
 
-  // Render a loading state while translations are being fetched
   if (!translations) {
     return (
       <div className="bg-gray-800 min-h-screen w-full flex items-center justify-center">
@@ -86,7 +84,7 @@ export const LanguageProvider: React.FC<PropsWithChildren<{}>> = ({ children }) 
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t }}>
       {children}
-    </Language-Provider>
+    </LanguageContext.Provider>
   );
 };
 

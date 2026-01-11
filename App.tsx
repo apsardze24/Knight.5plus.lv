@@ -26,34 +26,32 @@ const THEMES_DATA: Omit<ColorTheme, 'name'>[] = [
   },
   {
     id: 'savePlanet',
-    lightSquare: '#d2b48c', // Сухая земля (светлая)
-    darkSquare: '#bc8f8f',  // Сухая земля (темная)
-    visitedLight: '#90ee90', // Ожившая трава
-    visitedDark: '#4caf50',  // Густой лес
+    lightSquare: '#b8b0a5', // Растрескавшаяся коричнево-серая земля
+    darkSquare: '#968c81',  // Темная сухая почва
+    visitedLight: '#81c784', // Проросшая трава
+    visitedDark: '#388e3c',  // Цветущий сад
     current: '#2e7d32',
-    possible: 'rgba(255, 255, 255, 0.5)',
+    possible: 'rgba(255, 255, 255, 0.6)',
     textPrimary: '#1b5e20',
     textSecondary: '#ffffff',
     emoji: '🌲',
-    emptyCellIcon: '🏜️',
   },
   {
     id: 'pollutePlanet',
-    lightSquare: '#c5e1a5', // Чистая травка (светлая)
-    darkSquare: '#81c784',  // Сочная трава (темная)
-    visitedLight: '#8d6e63', // Загрязненная почва
-    visitedDark: '#5d4037',  // Гниль/грязь
-    current: '#212121',
-    possible: 'rgba(255, 235, 59, 0.6)',
-    textPrimary: '#ffffff',
+    lightSquare: '#a5d6a7', // Чистая зелень
+    darkSquare: '#81c784',  // Чистая зелень
+    visitedLight: '#5a5a5a', // Грязный серый налет
+    visitedDark: '#333333',  // Угольная пустошь
+    current: '#000000',
+    possible: 'rgba(255, 235, 59, 0.5)',
+    textPrimary: '#eeeeee',
     textSecondary: '#ffffff',
     emoji: '💩',
-    emptyCellIcon: '🌿',
   },
   {
     id: 'randomArt',
-    lightSquare: '#7B68EE', // MediumSlateBlue
-    darkSquare: '#5D3FD3', // Iris
+    lightSquare: '#7B68EE', 
+    darkSquare: '#5D3FD3', 
     visitedLight: '#cdd26a',
     visitedDark: '#aaa23a',
     current: '#6495ED',
@@ -124,7 +122,6 @@ const App: React.FC = () => {
         const parsed = JSON.parse(savedConfig);
         let themeId = parsed.themeId;
 
-        // Migration from old tyranny theme
         if (themeId === 'tyranny') {
             themeId = THEMES_DATA[0].id;
         }
@@ -137,7 +134,6 @@ const App: React.FC = () => {
           }
         }
         
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const { theme, colorTheme, ...restOfParsed } = parsed;
         return { ...getDefaultConfig(), ...restOfParsed, themeId: themeId || THEMES_DATA[0].id };
       }
@@ -164,7 +160,7 @@ const App: React.FC = () => {
   const [artworkQuiz, setArtworkQuiz] = useState<ArtworkQuiz | null>(null);
   const [isArtworkGuessed, setIsArtworkGuessed] = useState<boolean>(false);
   const [guessBonusStartScore, setGuessBonusStartScore] = useState<number>(0);
-  const [bonusPoints, setBonusPoints] = useState<number>(0); // Used for penalties
+  const [bonusPoints, setBonusPoints] = useState<number>(0); 
   const [currentArtworkTitle, setCurrentArtworkTitle] = useState<string | null>(null);
 
 
@@ -186,7 +182,6 @@ const App: React.FC = () => {
     }
   }, []);
 
-  // Back button handling logic
   const screenRef = useRef(screen);
   useEffect(() => {
     screenRef.current = screen;
@@ -194,26 +189,21 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const handlePopState = () => {
-      // If we are on the game screen, a back press should go to settings.
       if (screenRef.current === 'game') {
         setScreen('settings');
       }
-      // If we are on settings, a back press should go to the website.
       else if (screenRef.current === 'settings') {
         window.location.href = 'https://apsardze24.lv';
       }
     };
 
-    // Listen for the browser's back button
     window.addEventListener('popstate', handlePopState);
-
     return () => {
       window.removeEventListener('popstate', handlePopState);
     };
   }, []);
 
 
-  // Game Logic
   const isValidPosition = useCallback((pos: Position, board: BoardState) => {
     return (
       pos.row >= 0 &&
@@ -316,9 +306,7 @@ const App: React.FC = () => {
     document.documentElement.lang = language;
   }, [language]);
 
-  // Helper to centralize navigation logic to game screen
   const navigateToGame = () => {
-      // Push a state to history so the back button can be caught
       window.history.pushState({ screen: 'game' }, '');
       setScreen('game');
   };
@@ -364,12 +352,10 @@ const App: React.FC = () => {
         URL.revokeObjectURL(revealImage);
     }
     setRevealImage(imageUrl);
-    // Shuffle options for fair display
     const shuffledOptions = [...quizData.options].sort(() => Math.random() - 0.5);
     setArtworkQuiz({ ...quizData, options: shuffledOptions });
     setCurrentArtworkTitle(quizData.correctTitle);
     
-    // Reset game/quiz state for a new round
     setIsArtworkGuessed(false);
     setGuessBonusStartScore(0);
     setBonusPoints(0);
@@ -383,23 +369,19 @@ const App: React.FC = () => {
 
     if (guess === artworkQuiz.correctTitle) {
       setIsArtworkGuessed(true);
-      // We set the score at which the bonus calculation starts
       setGuessBonusStartScore(moveHistory.length);
     } else {
-      // Apply penalty for incorrect guess
       setBonusPoints(prev => prev - 100);
     }
   }, [artworkQuiz, isArtworkGuessed, moveHistory.length]);
 
   const handleGoToSettings = useCallback(() => {
-    // This will trigger the popstate listener, which handles the screen change.
     window.history.back();
   }, []);
   
   const handleCookieConsent = (consent: 'given' | 'declined') => {
       localStorage.setItem(COOKIE_CONSENT_KEY, consent);
       setCookieConsent(consent);
-      // Here you would initialize analytics if consent is given
   };
   
   const handleGameEnd = useCallback((finalScore: number) => {

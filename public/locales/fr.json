@@ -1,0 +1,92 @@
+
+{
+  "app": { "title": "Défi du Parcours du Cavalier" },
+  "settings": {
+    "howToPlay": "Comment Jouer",
+    "howToPlayDescription": "Le but est de visiter chaque case de l'échiquier exactement une fois, en se déplaçant comme un cavalier aux échecs. Un cavalier se déplace en 'L' : deux cases dans une direction (horizontalement ou verticalement) puis une case perpendiculairement.",
+    "boardSize": "Taille de l'Échiquier",
+    "showHints": "Afficher les Aides",
+    "showNumbers": "Afficher les Numéros",
+    "theme": "Thème",
+    "startGame": "Commencer la Partie",
+    "returnToGame": "Retour au Jeu",
+    "newGame": "Nouvelle Partie",
+    "loadPhoto": "Jouer sur Photo",
+    "shareGame": "Partager le Jeu",
+    "diceWar": "Guerre des Dés",
+    "imagePdfTools": "Outils Image & PDF",
+    "loadingArt": "Chargement...",
+    "artError": "Impossible de charger l'œuvre d'art. Veuillez vérifier votre connexion et en essayer une autre.",
+    "totalScore": "Score Total"
+  },
+  "themes": {
+    "classic": "Classique",
+    "savePlanet": "Sauver la Planète",
+    "pollutePlanet": "Polluer la Planète",
+    "randomArt": "Puzzle d'Art"
+  },
+  "game": {
+    "score": "Score",
+    "undo": "Annuler",
+    "restart": "Recommencer",
+    "settings": "Paramètres",
+    "guessTheArtwork": "Devinez l'œuvre d'art :",
+    "correctGuess": "Correct ! Les prochains coups rapportent des points bonus !",
+    "incorrectGuess": "Incorrect ! -100 points."
+  },
+  "gameOver": {
+    "winTitle": "Parcours Terminé !",
+    "loseTitle": "Partie Terminée",
+    "winMessage": "Félicitations, vous avez maîtrisé le Parcours du Cavalier !",
+    "loseMessage": "Un effort valeureux, but the knight is trapped.",
+    "yourScore": "Votre Score",
+    "playAgain": "Rejouer",
+    "changeSettings": "Changer les Paramètres",
+    "shareResult": "Partager le Résultat",
+    "shareText": "J'ai obtenu {score}/{total} dans le Défi du Parcours du Cavalier ! Découvrez mon résultat :",
+    "baseScore": "Score de Base",
+    "bonusPoints": "Points Bonus",
+    "penalty": "Pénalité",
+    "totalScore": "Score Total",
+    "artworkTitle": "Œuvre d'art"
+  },
+  "artworks": {
+    "monaLisa": { "title": "La Joconde", "options": ["La Joconde", "La Dame à l'hermine", "La Belle Ferronnière", "La Vierge aux rochers"] },
+    "starryNight": { "title": "La Nuit étoilée", "options": ["La Nuit étoilée", "Terrasse du café le soir", "Les Mangeurs de pommes de terre", "Les Tournesols"] },
+    "pearlEarring": { "title": "La Jeune Fille à la perle", "options": ["La Jeune Fille à la perle", "La Laitière", "L'Art de la peinture", "Vue de Delft"] },
+    "birthOfVenus": { "title": "La Naissance de Vénus", "options": ["La Naissance de Vénus", "Le Printemps", "Pallas et le Centaure", "Vénus et Mars"] },
+    "nightWatch": { "title": "La Ronde de nuit", "options": ["La Ronde de nuit", "Les Syndics des drapiers", "La Fiancée juive", "La Leçon d'anatomie"] },
+    "theKiss": { "title": "Le Baiser", "options": ["Le Baiser", "Les Trois Âges de la femme", "Portrait d'Adele Bloch-Bauer I", "Judith et la Tête d'Holopherne"] },
+    "wanderer": { "title": "Le Voyageur contemplant une mer de nuages", "options": ["Le Voyageur contemplant une mer de nuages", "L'Abbaye dans une chênaie", "La Mer de glace", "Falaises de craie sur l'île de Rügen"] },
+    "greatWave": { "title": "La Grande Vague de Kanagawa", "options": ["La Grande Vague de Kanagawa", "Vent frais par matin clair", "Une brise légère par une belle journée", "Le Rêve de la femme du pêcheur"] },
+    "liberty": { "title": "La Liberté guidant le peuple", "options": ["La Liberté guidant le peuple", "Le Radeau de La Méduse", "La Mort de Sardanapale", "Femmes d'Alger"] },
+    "arnolfini": { "title": "Les Époux Arnolfini", "options": ["Les Époux Arnolfini", "L'Agneau mystique", "L'Homme au turban rouge", "La Vierge du chancelier Rolin"] },
+    "americanGothic": { "title": "American Gothic", "options": ["American Gothic", "Nighthawks", "Le Monde de Christina", "Tôt un dimanche matin"] },
+    "theScream": { "title": "Le Cri", "options": ["Le Cri", "Madone", "La Danse de la vie", "Anxiété"] },
+    "laGrandeJatte": { "title": "Un dimanche après-midi à l'île de la Grande Jatte", "options": ["Un dimanche après-midi à l'île de la Grande Jatte", "Baigneurs à Asnières", "Le Cirque", "Les Poseuses"] },
+    "persistenceOfMemory": { "title": "La Persistance de la mémoire", "options": ["La Persistance de la mémoire", "Les Éléphants", "Cygnes réfléchis en éléphants", "Métamorphose de Narcisse"] },
+    "lasMeninas": { "title": "Les Ménines", "options": ["Les Ménines", "La Reddition de Breda", "La Vénus à son miroir", "Le Triomphe de Bacchus"] }
+  },
+  "footer": {
+    "developer": "Développeur",
+    "feedback": "Vous avez trouvé un bug ou avez une suggestion ? Envoyez-nous un email :",
+    "website": "apsardze24.lv",
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsOfService": "Conditions d'Utilisation",
+    "cookiePolicy": "Politique de Cookies"
+  },
+  "legal": {
+    "backButton": "Retour au jeu",
+    "privacyTitle": "Politique de Confidentialité",
+    "privacyContent": "Notre application respecte votre vie privée. Nous stockons uniquement vos paramètres de jeu (comme la taille du plateau et le thème) dans le stockage local de votre navigateur. Ces données sont stockées sur votre appareil et ne sont pas envoyées à nos serveurs. À l'avenir, nous pourrions utiliser Google Analytics pour collecter des données d'utilisation anonymes afin de nous aider à améliorer le jeu. Ces données seront agrégées et ne contiendront aucune information personnellement identifiable.",
+    "termsTitle": "Conditions d'Utilisation",
+    "termsContent": "En utilisant ce jeu, vous acceptez ces conditions. Ce jeu est fourni gratuitement, pour un usage personnel et non commercial. Vous acceptez de ne pas utiliser de scripts automatisés pour jouer au jeu ou perturber le service. Nous nous réservons le droit de modifier ces conditions à tout moment.",
+    "cookiesTitle": "Politique de Cookies",
+    "cookiesContent": "Ce site utilise des cookies et des technologies similaires. Un 'cookie' est un petit fichier de données stocké sur votre appareil. Nous utilisons le `localStorage` du navigateur pour enregistrer votre configuration de jeu. Ceci est essentiel pour que le jeu se souvienne de vos préférences entre les sessions. Nous pouvons également utiliser des cookies à des fins d'analyse (par exemple, Google Analytics) pour comprendre comment les joueurs interagissent avec le jeu, ce qui nous aide à l'améliorer. En utilisant notre site, vous consentez à cela."
+  },
+  "cookieConsent": {
+    "message": "Nous utilisons des cookies pour améliorer votre expérience et à des fins d'analyse. En continuant à utiliser ce site, vous consentez à notre utilisation des cookies.",
+    "accept": "Accepter",
+    "decline": "Refuser"
+  }
+}

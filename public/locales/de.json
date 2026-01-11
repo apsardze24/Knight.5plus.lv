@@ -1,0 +1,92 @@
+
+{
+  "app": { "title": "Die Springer-Tour-Herausforderung" },
+  "settings": {
+    "howToPlay": "Spielanleitung",
+    "howToPlayDescription": "Das Ziel ist es, jedes Feld auf dem Brett genau einmal zu besuchen, indem man sich wie ein Springer im Schach bewegt. Ein Springer bewegt sich in einer 'L'-Form: zwei Felder in eine Richtung (horizontal oder vertikal) und dann ein Feld senkrecht dazu.",
+    "boardSize": "Brettgröße",
+    "showHints": "Hinweise Anzeigen",
+    "showNumbers": "Zahlen Anzeigen",
+    "theme": "Thema",
+    "startGame": "Spiel Starten",
+    "returnToGame": "Zurück zum Spiel",
+    "newGame": "Neues Spiel",
+    "loadPhoto": "Auf Foto spielen",
+    "shareGame": "Spiel teilen",
+    "diceWar": "Würfelkrieg",
+    "imagePdfTools": "Bild- & PDF-Tools",
+    "loadingArt": "Wird geladen...",
+    "artError": "Das Kunstwerk konnte nicht geladen werden. Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es mit einem anderen.",
+    "totalScore": "Gesamtpunktzahl"
+  },
+  "themes": {
+    "classic": "Klassisch",
+    "savePlanet": "Planet Retten",
+    "pollutePlanet": "Planet Verschmutzen",
+    "randomArt": "Kunsträtsel"
+  },
+  "game": {
+    "score": "Punktestand",
+    "undo": "Rückgängig",
+    "restart": "Neustart",
+    "settings": "Einstellungen",
+    "guessTheArtwork": "Errate das Kunstwerk:",
+    "correctGuess": "Richtig! Zukünftige Züge bringen Bonuspunkte!",
+    "incorrectGuess": "Falsch! -100 Punkte."
+  },
+  "gameOver": {
+    "winTitle": "Tour Abgeschlossen!",
+    "loseTitle": "Spiel Vorbei",
+    "winMessage": "Herzlichen Glückwunsch, Sie haben die Springer-Tour gemeistert!",
+    "loseMessage": "Ein tapferer Versuch, aber der Springer ist gefangen.",
+    "yourScore": "Ihre Punktzahl",
+    "playAgain": "Nochmal Spielen",
+    "changeSettings": "Einstellungen Ändern",
+    "shareResult": "Ergebnis teilen",
+    "shareText": "Ich habe {score}/{total} in der Springer-Tour-Herausforderung erreicht! Schau dir mein Ergebnis an:",
+    "baseScore": "Basispunktzahl",
+    "bonusPoints": "Bonuspunkte",
+    "penalty": "Strafe",
+    "totalScore": "Gesamtpunktzahl",
+    "artworkTitle": "Kunstwerk"
+  },
+  "artworks": {
+    "monaLisa": { "title": "Mona Lisa", "options": ["Mona Lisa", "Dame mit dem Hermelin", "La Belle Ferronnière", "Die Felsgrottenmadonna"] },
+    "starryNight": { "title": "Die Sternennacht", "options": ["Die Sternennacht", "Caféterrasse am Abend", "Die Kartoffelesser", "Sonnenblumen"] },
+    "pearlEarring": { "title": "Das Mädchen mit dem Perlenohrring", "options": ["Das Mädchen mit dem Perlenohrring", "Die Milchmagd", "Die Malkunst", "Ansicht von Delft"] },
+    "birthOfVenus": { "title": "Die Geburt der Venus", "options": ["Die Geburt der Venus", "Primavera", "Pallas and the Centaur", "Venus and Mars"] },
+    "nightWatch": { "title": "Die Nachtwache", "options": ["Die Nachtwache", "Die Vorsteher der Tuchmacherzunft", "Die Judenbraut", "Die Anatomie des Dr. Tulp"] },
+    "theKiss": { "title": "Der Kuss", "options": ["Der Kuss", "Die drei Lebensalter der Frau", "Porträt der Adele Bloch-Bauer I", "Judith und Holofernes"] },
+    "wanderer": { "title": "Der Wanderer über dem Nebelmeer", "options": ["Der Wanderer über dem Nebelmeer", "Abtei im Eichwald", "Das Eismeer", "Kreidefelsen auf Rügen"] },
+    "greatWave": { "title": "Die große Welle vor Kanagawa", "options": ["Die große Welle vor Kanagawa", "Schöner Wind, klarer Morgen", "Eine milde Brise an einem schönen Tag", "Der Traum der Fischersfrau"] },
+    "liberty": { "title": "Die Freiheit führt das Volk", "options": ["Die Freiheit führt das Volk", "Das Floß der Medusa", "Der Tod des Sardanapal", "Die Frauen von Algier"] },
+    "arnolfini": { "title": "Die Arnolfini-Hochzeit", "options": ["Die Arnolfini-Hochzeit", "Der Genter Altar", "Mann mit rotem Turban", "Die Madonna des Kanzlers Rolin"] },
+    "americanGothic": { "title": "American Gothic", "options": ["American Gothic", "Nighthawks", "Christinas Welt", "Früher Sonntagmorgen"] },
+    "theScream": { "title": "Der Schrei", "options": ["Der Schrei", "Madonna", "Der Tanz des Lebens", "Angst"] },
+    "laGrandeJatte": { "title": "Ein Sonntagnachmittag auf der Insel La Grande Jatte", "options": ["Ein Sonntagnachmittag auf der Insel La Grande Jatte", "Badende in Asnières", "Der Zirkus", "Die Modelle"] },
+    "persistenceOfMemory": { "title": "Die Beständigkeit der Erinnerung", "options": ["Die Beständigkeit der Erinnerung", "Die Elefanten", "Schwäne spiegeln Elefanten wider", "Metamorphose des Narziss"] },
+    "lasMeninas": { "title": "Las Meninas", "options": ["Las Meninas", "Die Übergabe von Breda", "Die Venus vor dem Spiegel", "Der Triumph des Bacchus"] }
+  },
+  "footer": {
+    "developer": "Entwickler",
+    "feedback": "Fehler gefunden oder einen Vorschlag? Senden Sie uns eine E-Mail:",
+    "website": "apsardze24.lv",
+    "privacyPolicy": "Datenschutz-Bestimmungen",
+    "termsOfService": "Nutzungsbedingungen",
+    "cookiePolicy": "Cookie-Richtlinie"
+  },
+  "legal": {
+    "backButton": "Zurück zum Spiel",
+    "privacyTitle": "Datenschutz-Bestimmungen",
+    "privacyContent": "Unsere Anwendung respektiert Ihre Privatsphäre. Wir speichern nur Ihre Spieleinstellungen (wie Brettgröße und Thema) im lokalen Speicher Ihres Browsers. Diese Daten werden auf Ihrem Gerät gespeichert und nicht an unsere Server gesendet. In Zukunft verwenden wir möglicherweise Google Analytics, um anonyme Nutzungsdaten zu sammeln, die uns helfen, das Spiel zu verbessern. Diese Daten werden aggregiert und enthalten keine personenbezogenen Daten.",
+    "termsTitle": "Nutzungsbedingungen",
+    "termsContent": "Durch die Nutzung dieses Spiels stimmen Sie diesen Bedingungen zu. Dieses Spiel wird kostenlos für den persönlichen, nicht kommerziellen Gebrauch zur Verfügung gestellt. Sie stimmen zu, keine automatisierten Skripte zu verwenden, um das Spiel zu spielen oder den Dienst zu stören. Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern.",
+    "cookiesTitle": "Cookie-Richtlinie",
+    "cookiesContent": "Diese Seite verwendet Cookies und ähnliche Technologien. Ein 'Cookie' ist ein kleines Datenelement, das auf Ihrem Gerät gespeichert wird. Wir verwenden den `localStorage` des Browsers, um Ihre Spielkonfiguration zu speichern. Dies ist unerlässlich, damit sich das Spiel Ihre Präferenzen zwischen den Sitzungen merken kann. Wir können auch Cookies für Analysezwecke (z. B. Google Analytics) verwenden, um zu verstehen, wie Spieler mit dem Spiel interagieren, was uns hilft, es zu verbessern. Durch die Nutzung unserer Website stimmen Sie dem zu."
+  },
+  "cookieConsent": {
+    "message": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und für Analysezwecke. Indem Sie diese Seite weiterhin nutzen, stimmen Sie der Verwendung von Cookies zu.",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen"
+  }
+}
